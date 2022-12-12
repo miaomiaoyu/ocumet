@@ -1,0 +1,40 @@
+---
+title: "Ocumet Statistics"
+output: html_document
+date: "2022-12-12"
+---
+
+```{r setup, include=FALSE}
+#install.packages(c("ggplot2", "ggpubr", "tidyverse", "broom", "AICcmodavg"))
+
+library(ggplot2)
+library(ggpubr)
+library(tidyverse)
+library(broom)
+library(AICcmodavg)
+```
+
+## Set up the directory and load in data.
+
+```{set directory and load data}
+
+# Set working directory
+setwd("~/workspace/ocumet")
+
+# Load data
+ocumet.data <- read.csv("data/1209-naion.csv",
+                        header = TRUE)
+summary(ocumet.data)
+
+```
+
+## Including Plots
+
+
+```{r pressure, echo=FALSE}
+res.aov <- anova_test(
+  data = ocumet.data, dv = 
+)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

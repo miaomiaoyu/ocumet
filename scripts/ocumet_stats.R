@@ -6,11 +6,11 @@ library(tidyverse)
 library(broom)
 library(AICcmodavg)
 
-# set working directory
-setwd("~/Documents/LiaoLab/ocumet")
+# Set working directory
+setwd("~/workspace/ocumet")
 
-# load data
-ocumet.data <- read.csv("./data/ocumet-1102-clean.csv",
+# Load data
+data <- read.csv("data/1209-naion.csv",
                         header = TRUE)
 
-summary(ocumet.data)
+summary(data)
