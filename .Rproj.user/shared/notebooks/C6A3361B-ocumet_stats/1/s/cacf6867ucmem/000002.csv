@@ -1,0 +1,9 @@
+"0","
+# Set working directory
+setwd(""~/workspace/ocumet"")
+
+# Load data
+ocumet.data <- read.csv(""data/1209-naion.csv"",
+                        header = TRUE)
+summary(ocumet.data)
+"
